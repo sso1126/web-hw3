@@ -1,12 +1,12 @@
 /* // part A : 영화 데이터 10건
 const titles = [
     // 내 인생 영화
-    "극장판 치이카와: 인어 섬의 비밀",
     "너의 이름은",
-    "엔드 오브 에반게리온",
-    "명탐정 코난: 100만 달러의 펜타그램 포스터",
-    "모노노케 히메",
-
+    "하울의 움직이는 성",
+    "목소리의 형태",
+    "마루 밑 아리에티",
+    "주토피아",
+    
     // 박스 오피스 1~5
     "극장판 치이카와: 인어 섬의 비밀",
     "암살자(들)",
@@ -80,31 +80,31 @@ const movies = [
         audience: 0, poster: "/1Xz0WSXeXzyTCbHADGBpmEaDpZl.jpg", type: "mine", rank: null, overview: "인간의 집 마루 밑에서 살아가는 소인 가족의 소녀 아리에티는 인간에게 필요한 물건을 몰래 빌려오며 살아가던 중, 소년 쇼우와 만나게 된다. 두 사람은 서로의 세계를 이해하며 우정을 쌓아가지만, 인간과 소인족의 갈등과 위험이 다가오면서 그들의 관계는 위기에 처하게 된다."
     },
     {
-        title: "극장판 치이카와: 인어 섬의 비밀", year: 2026, date: "2026-09-30", rating: 7.6,
-        audience: 23394977, poster: "/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg", type: "mine", rank: null, overview: "치이카와와 친구들은 높은 보수와 맛있는 음식이 제공된다는 초대장을 받고 특별한 섬으로 떠난다. 하지만 섬에서 벌어지는 수상한 사건과 거대한 세이렌의 등장으로 예상치 못한 모험에 휘말리게 된다."
+        title: "주토피아", year: 2016, date: "2016-02-11", rating: 7.8,
+        audience: 0, poster: "/uitqZVbhvlQV5iLOdbk3itGoNNd.jpg", type: "mine", rank: null, overview: "토끼 경찰관 주디는 누구나 무엇이든 될 수 있는 도시 주토피아에서 최초의 토끼 경찰관이 된다. 여우 닉과 함께 의문의 실종 사건을 수사하며 도시를 둘러싼 숨겨진 진실을 밝혀 나간다."
     },
 
 
     // 박스 오피스 1~5
     {
         title: "극장판 치이카와: 인어 섬의 비밀", year: 2026, date: "2026-09-30", rating: 7.6,
-        audience: 23394977, poster: "/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg", type: "boxoffice", rank: 1
+        audience: 0, poster: "/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg", type: "mine", rank: null, overview: "치이카와와 친구들이 인어 섬에서 펼치는 모험과 우정을 그린 애니메이션 영화. 치이카와는 인어 섬의 비밀을 밝혀내기 위해 친구들과 함께 다양한 도전을 겪으며 성장해 나간다."
     },
     {
-        title: "암살자(들)", year: 2026, date: "2026-09-23", rating: 7.2,
-        audience: 3382132, poster: "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg", type: "boxoffice", rank: 2
+        title: "시간을 달리는 소녀", year: 2006, date: "2006-07-15", rating: 7.7,
+        audience: 0, poster: "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg", type: "mine", rank: null, overview: "평범한 고등학생 마코토는 우연히 시간 여행 능력을 얻게 된다. 그녀는 과거와 미래를 오가며 친구들과 가족의 삶에 영향을 미치게 되고, 그 과정에서 사랑과 우정, 책임에 대한 중요한 교훈을 배우게 된다."
     },
     {
-        title: "실낙원", year: 2026, date: "2026-10-21", rating: 8.0,
-        audience: 112193, poster: "wkm9BQLok7U2KihcCspCa663Qse.jpg", type: "boxoffice", rank: 3
+        title: "극장판 카드캡터 체리 : 봉인된 카드", year: 2000, date: "2000-07-15", rating: 8.2,
+        audience: 0, poster: "/ezYcCER756g37B4Y7kZKfr2flgc.jpg", type: "mine", rank: null, overview: "체리와 친구들이 봉인된 카드를 찾아 모험을 떠나는 이야기를 그린 애니메이션 영화. 체리는 카드의 힘을 이용해 다양한 도전을 극복하며 성장하고, 친구들과의 우정을 더욱 깊게 다져 나간다."
     },
     {
-        title: "타짜: 벨제붑의 노래", year: 2026, date: "2026-09-23", rating: 7.0,
-        audience: 2006488, poster: "/w5OX3u2SpMVRU0sol0mtIaf4LSI.jpg", type: "boxoffice", rank: 4
+        title: "울고 싶은 나는 고양이 가면을 쓴다", year: 2020, date: "2020-06-18", rating: 7.8,
+        audience: 0, poster: "/g9ArpDiGMz9OCCCdI1JKmS5JteH.jpg", type: "mine", rank: null, overview: "한 소녀가 고양이 가면을 쓰고 울고 싶은 마음을 표현하며 성장해 나가는 이야기를 그린 애니메이션 영화."
     },
     {
-        title: "클레이페이스", year: 2026, date: "2026-10-19", rating: 7.5,
-        audience: 84051, poster: "/LSGpoSAlitss0KOvVakkeUToZo.jpg", type: "boxoffice", rank: 5
+        title: "벼랑 위의 포뇨", year: 2008, date: "2008-07-15", rating: 7.7,
+        audience: 0, poster: "/tGSuFBsqdXxIz3fTSBfsZU9FBMN.jpg", type: "mine", rank: null, overview: "벼랑 위에서 벌어지는 포뇨의 이야기를 그린 애니메이션 영화. 포뇨는 다양한 도전을 겪으며 성장해 나가고, 그 과정에서 사랑과 우정, 그리고 진실을 찾아 나선다."
     },
 
 ];
