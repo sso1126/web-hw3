@@ -178,7 +178,7 @@ function renderCards(list) {
 
     // 영화 개수 표시
     document.querySelector("#count").textContent =
-        list.length + "편";
+        list.length + "편";en
 
     updateLikeCount();
 
@@ -247,8 +247,6 @@ function openDetail(title) {
             class="detail-poster">
 
         <h2>${m.title}</h2>
-
-        <p>개봉 연도: ${m.year}</p>
 
         <p>개봉일: ${m.date}</p>
 

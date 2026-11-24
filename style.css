@@ -353,3 +353,44 @@ body.is-loading .card {
     display:
         block;
 }
+
+#detail {
+    width: 80%;
+    max-width: 320px;
+    max-height: 75vh;
+    overflow-y: auto;
+
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+
+    margin: auto;
+}
+
+/* 상세창 바깥쪽 어둡게 */
+#detail::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* 상세창 포스터 */
+.detail-poster {
+    display: block;
+    width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+/* 상세창 제목 */
+#detailBody h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 상세창 줄거리 */
+#detailBody p {
+    font-size: 14px;
+    line-height: 1.6;
+}
