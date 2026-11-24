@@ -1,4 +1,4 @@
-/* // part A : 영화 데이터 10건
+// part A : 영화 데이터 10건
 const titles = [
     // 내 인생 영화
     "너의 이름은",
@@ -8,11 +8,11 @@ const titles = [
     "주토피아",
     
     // 박스 오피스 1~5
+    "폭설",
+    "헝거게임 55번째 추첨의 날",
     "극장판 치이카와: 인어 섬의 비밀",
-    "암살자(들)",
-    "실낙원",
-    "타짜: 벨제붑의 노래",
-    "클레이페이스"
+    "폴2: 데드포인트",
+    "최종면접"
 ];
 
 const years = [
@@ -36,11 +36,11 @@ const ratings = [
     6.9,
     8.3,
 
-    7.1,
+    7.5,
+    7.8,
+    7.6,
     7.2,
-    8.0,
-    7.0,
-    7.5
+    7.2
 ];
 
 const audiences = [
@@ -50,13 +50,13 @@ const audiences = [
     0,
     0,
 
-    23394977,
-    3382132,
-    112193,
-    2006488,
-    84051
+    462142,
+    98465,
+    3075239,
+    246495,
+    327605
 ];
-*/
+
 
 
 
@@ -87,24 +87,24 @@ const movies = [
 
     // 박스 오피스 1~5
     {
+        title: "폭설", year: 2026, date: "2026-11-18", rating: 7.5,
+        audience: 462142, poster: "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg", type: "boxoffice", rank: 1, overview: "한 겨울, 폭설로 인해 고립된 마을에서 벌어지는 미스터리 스릴러 영화. 주민들은 눈 속에서 생존을 위해 서로를 의심하며 긴장감 넘치는 상황에 직면하게 된다."
+    },
+    {
+        title: "헝거게임 55번째 추첨의 날", year: 2026, date: "2026-11-18", rating: 7.8,
+        audience: 98465, poster: "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg", type: "boxoffice", rank: 2, overview: "디스토피아 세계에서 매년 열리는 헝거게임의 55번째 추첨의 날을 다룬 액션 스릴러 영화. 주인공은 생존을 위해 치열한 경쟁에 뛰어들며, 권력과 정의, 인간성에 대한 질문을 던진다."
+    },
+    {
         title: "극장판 치이카와: 인어 섬의 비밀", year: 2026, date: "2026-09-30", rating: 7.6,
-        audience: 0, poster: "/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg", type: "mine", rank: null, overview: "치이카와와 친구들이 인어 섬에서 펼치는 모험과 우정을 그린 애니메이션 영화. 치이카와는 인어 섬의 비밀을 밝혀내기 위해 친구들과 함께 다양한 도전을 겪으며 성장해 나간다."
+        audience: 3075239, poster: "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg", type: "boxoffice", rank: 3, overview: "치이카와와 친구들이 인어 섬에서 펼치는 모험과 우정을 그린 애니메이션 영화. 치이카와는 인어 섬의 비밀을 밝혀내기 위해 친구들과 함께 다양한 도전을 겪으며 성장해 나간다."
     },
     {
-        title: "시간을 달리는 소녀", year: 2006, date: "2006-07-15", rating: 7.7,
-        audience: 0, poster: "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg", type: "mine", rank: null, overview: "평범한 고등학생 마코토는 우연히 시간 여행 능력을 얻게 된다. 그녀는 과거와 미래를 오가며 친구들과 가족의 삶에 영향을 미치게 되고, 그 과정에서 사랑과 우정, 책임에 대한 중요한 교훈을 배우게 된다."
+        title: "폴2: 데드포인트", year: 2026, date: "2026-11-11", rating: 7.2,
+        audience: 246495, poster: "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg", type: "boxoffice", rank: 4, overview: "폴과 그의 동료들이 새로운 임무를 수행하며 벌어지는 액션 스릴러 영화. 폴은 과거의 적들과 맞서며, 팀워크와 전략을 통해 위기를 극복하고 임무를 완수하려 한다."
     },
     {
-        title: "극장판 카드캡터 체리 : 봉인된 카드", year: 2000, date: "2000-07-15", rating: 8.2,
-        audience: 0, poster: "/ezYcCER756g37B4Y7kZKfr2flgc.jpg", type: "mine", rank: null, overview: "체리와 친구들이 봉인된 카드를 찾아 모험을 떠나는 이야기를 그린 애니메이션 영화. 체리는 카드의 힘을 이용해 다양한 도전을 극복하며 성장하고, 친구들과의 우정을 더욱 깊게 다져 나간다."
-    },
-    {
-        title: "울고 싶은 나는 고양이 가면을 쓴다", year: 2020, date: "2020-06-18", rating: 7.8,
-        audience: 0, poster: "/g9ArpDiGMz9OCCCdI1JKmS5JteH.jpg", type: "mine", rank: null, overview: "한 소녀가 고양이 가면을 쓰고 울고 싶은 마음을 표현하며 성장해 나가는 이야기를 그린 애니메이션 영화."
-    },
-    {
-        title: "벼랑 위의 포뇨", year: 2008, date: "2008-07-15", rating: 7.7,
-        audience: 0, poster: "/tGSuFBsqdXxIz3fTSBfsZU9FBMN.jpg", type: "mine", rank: null, overview: "벼랑 위에서 벌어지는 포뇨의 이야기를 그린 애니메이션 영화. 포뇨는 다양한 도전을 겪으며 성장해 나가고, 그 과정에서 사랑과 우정, 그리고 진실을 찾아 나선다."
+        title: "최종면접", year: 2026, date: "2026-11-04", rating: 7.2,
+        audience: 327605, poster: "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg", type: "boxoffice", rank: 5, overview: "한 젊은 구직자가 최종 면접에서 겪는 긴장과 도전을 그린 드라마 영화. 그는 면접관들의 까다로운 질문과 압박 속에서 자신의 능력과 인성을 증명하며, 진정한 자신을 찾아가는 여정을 시작한다."
     },
 
 ];
